@@ -1,5 +1,6 @@
-import { HStack } from '@chakra-ui/react';
-import React from 'react'
+import {Button, HStack } from '@chakra-ui/react';
+import React from 'react';
+import {Link} from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,6 +8,13 @@ const Header = () => {
       <Button variant={"unstyles"} color={"white"}>
         <Link to="/">Home</Link>
       </Button>
+      <Button variant={"unstyled"} color={"white"}>
+        <Link to="/exchanges">Exchnages</Link>
+      </Button>
+      <Button variant={"unstyled"} color={"white"}>
+        <Link to="/coins">Coins</Link>
+      </Button>
+      
     </HStack>
   );
 };

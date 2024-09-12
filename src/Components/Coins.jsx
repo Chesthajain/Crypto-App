@@ -4,7 +4,6 @@ import { server } from "../index";
 import {
   Button,
   Container,
-  Heading,
   HStack,
   Radio,
   RadioGroup

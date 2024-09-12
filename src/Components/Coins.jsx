@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { server } from "../index";
 import {
+  Button,
   Container,
   Heading,
   HStack,
@@ -76,9 +77,20 @@ const Coins = () => {
          </HStack>
         </>
       )}
-    </Container>
+    
+
+<HStack w={"full"} overflowX={"auto"} p={"8"}>
+  {btns.map((item,index) => (
+    <Button 
+    key = {index}
+    bgColor = {"blackAlpha.900"}
+    color={"white"}
+    onClick={() => changePage(index+1)}
+    ></Button>
+    ))}
+</HStack>
+
+</Container>
   );
 };
-
-
 export default Coins;
